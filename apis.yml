@@ -1,8 +1,18 @@
 aid: celus
 name: Celus
-description: Celus is a company surfaced as a portfolio company of earlybird, speedinvest and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  CELUS GmbH is a Munich-based electronics design automation company building an
+  AI-driven, cloud design platform that automates the early stages of printed
+  circuit board (PCB) engineering. The CELUS Design Platform turns high-level
+  product requirements into schematics, part selections and layout-ready outputs
+  in minutes rather than days by combining AI-powered component search with its
+  proprietary CUBO component knowledge base, then handing off EDA-compatible
+  files to tools like Altium and KiCad. Founded by Alexander and Tobias Pohl and
+  backed by Earlybird and Speedinvest, CELUS targets hardware engineers and
+  manufacturers pursuing digital transformation of the electronics design
+  workflow. The platform is a closed SaaS product accessed through app.celus.io;
+  as of this enrichment pass CELUS publishes no public developer API, OpenAPI
+  specification, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/celus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +21,30 @@ x-backed-by:
 - speedinvest
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.celus.io/favicon.ico
 tags:
 - Company
+- Electronics
+- EDA
+- PCB Design
+- Design Automation
+- Artificial Intelligence
+- Hardware
+- Engineering
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,18 @@ maintainers:
 common:
 - type: Website
   url: https://celus.io
+- type: SignUp
+  url: https://app.celus.io/signup
+- type: Login
+  url: https://app.celus.io
+- type: Blog
+  url: https://www.celus.io/news
+- type: PrivacyPolicy
+  url: https://www.celus.io/privacy-policy
+- type: DomainSecurity
+  url: security/celus-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
